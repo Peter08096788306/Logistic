@@ -1,0 +1,89 @@
+.icon1 {
+    /* display: flex; */
+    /* gap: 26rem; */
+    /* padding: 1rem; */
+    /* position: absolute; */
+    top: 55%;
+    color: #ffff;
+}
+.icon {
+    display: flex;
+    justify-content: space-between;
+}
+.icon i {
+    font-size: 50px;
+    padding-top: 3rem;
+}
+.icon .angle {
+    text-align: end;
+}
+.tex {
+    padding-top: 6rem;
+    top: -30%;
+    margin-left: 3rem;
+}
+.tex h3 {
+    font-weight: 300;
+    text-align: center;
+    width: 90%;
+    color: #ffff;
+}
+
+
+
+
+
+@media (min-width: 1022px) {
+    .header {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    .logo img {
+        width: 80%;
+    }
+    .countdown {
+        text-align: right;
+    }
+    .Track-flex {
+        width: 50%;
+    }
+    .Track-flex input {
+        width: 80%;
+    }
+    .track {
+        width: 14%;
+        margin-left: -2.2rem;
+    }
+    .container {
+        display: flex;
+        justify-content: space-between;
+        width: 90%;
+        flex-direction: row-reverse;
+        align-items: baseline;
+    }
+    #Dallas::after {
+        content: '';
+        height: 55px;
+        width: 2px;
+        position: absolute;
+        top: 5%;
+        right: 16%;
+        background: silver;
+    }
+    nav {
+        margin-top: -4rem;
+        display: block;
+        overflow-y: hidden;
+    }
+    nav ul {
+        display: flex;
+        gap: 2rem;
+    }
+    .img img {
+        display: none;
+    }
+    #dallas {
+        margin-left: -2rem;
+    }
+}
