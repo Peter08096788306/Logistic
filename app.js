@@ -13,9 +13,15 @@ const close = document.querySelector(".close-menu");
 const Up = document.querySelector(".Sign-up");
 
 signUp.addEventListener('click', ()=> {
-    posit.classList.toggle('show-signup')
-    close.classList.toggle('show-menu')
-    Up.classList.add('translate')
+    posit.classList.add('show-signup')
+    close.classList.add('show-menu')
+    // posit.style.margin = "6rem"
+    // Up.classList.add('translate')
+})
+close.addEventListener('click', ()=> {
+    posit.classList.remove('show-signup')
+    // close.classList.add('show-menu')
+    // Up.classList.add('translate')
 })
 
 const sr = ScrollReveal({

@@ -91,6 +91,7 @@ body {
     position: sticky;
     top: 0;
     padding-bottom: 20rem;
+    z-index: 10;
     /* height: 20vh; */
     padding: 1rem;
 }
@@ -166,10 +167,14 @@ nav.open {
     color: #ffff;
 }
 .posit {
-    position: sticky;
+    position: fixed;
+    z-index: 700;
     /* position: fixed; */
-    top: 3%;
-    display: none;
+    top: 0;
+    /* display: none; */
+    visibility: hidden;
+    opacity: 0;
+    /* transform: translateY(0%); */
 }
 .close-menu {
     display: none;
@@ -190,7 +195,7 @@ nav.open {
     background: #ffff;
     margin: auto;
     padding-top: 2rem;
-    transform: translateY(100%);
+    /* transform: translateY(100%); */
     transition: all .3s linear;
     text-align: center;
     /* height: 88vh; */
@@ -198,7 +203,7 @@ nav.open {
     width: 95%;
 }
 .Sign-up.translate {
-    transform: translateY(0%);
+    /* transform: translateY(0%); */
     transition: all .3s linear;
 
 }
@@ -222,8 +227,12 @@ nav.open {
     margin-left: 38.5%;
 }
 .posit.show-signup {
+    visibility: visible;
+    opacity: 1;
+    /* transform: translateY(-60%); */
+    transition: all .3s linear;
     /* transform: translateY(0); */
-    display: block;
+    /* display: block; */
 }
 .form {
     display: flex;
@@ -297,15 +306,16 @@ nav.open {
     background-image: url(/image/images.jfif);
     background-repeat: no-repeat;
     background-size: cover;
-    /* animation: slide 15s infinite; */
+    animation: slide 15s infinite;
     width: 100%;
     height: 35vh;
 }
 @keyframes slide {
     20% {
-        background-image: url(/image/5cf33a89bb166.jpg);
+       background-image: url(/image/images.jfif);
     }
     30% {
+        background-image: url(/image/5cf33a89bb166.jpg);
 
     }
     75% {

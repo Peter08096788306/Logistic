@@ -2,12 +2,15 @@
     /* display: flex; */
     /* gap: 26rem; */
     /* padding: 1rem; */
-    /* position: absolute; */
+    position: absolute;
     top: 55%;
     color: #ffff;
 }
 .icon {
     display: flex;
+    width: 90vw;
+    margin-left: 1rem;
+    margin-top: 1rem;
     justify-content: space-between;
 }
 .icon i {
