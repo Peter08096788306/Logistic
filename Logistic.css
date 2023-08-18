@@ -5,8 +5,8 @@
     font-family: Roboto, sans-serif;
 }
 body {
-    height: 1000vh;
-    /* overflow-y: scroll; */
+    /* height: 6000vh; */
+    overflow-x: hidden;
 }
 .logo {
     text-align: center;
@@ -78,7 +78,7 @@ body {
 
 .phone p {
     font-size: 14px;
-    letter-spacing: 2px;
+    /* letter-spacing: 2px; */
     font-weight: 600;
 }
 
@@ -104,9 +104,6 @@ body {
     align-items: baseline;
 }
 nav {
-    /* overflow-y: scroll; */
-    /* position: fixed;
-    width: 100%; */
     padding: 1rem;
     line-height: 2;
     display: none;
@@ -169,12 +166,10 @@ nav.open {
 .posit {
     position: fixed;
     z-index: 700;
-    /* position: fixed; */
     top: 0;
-    /* display: none; */
     visibility: hidden;
+    transition: all .3s linear;
     opacity: 0;
-    /* transform: translateY(0%); */
 }
 .close-menu {
     display: none;
@@ -195,15 +190,12 @@ nav.open {
     background: #ffff;
     margin: auto;
     padding-top: 2rem;
-    /* transform: translateY(100%); */
-    transition: all .3s linear;
+    /* transition: all .3s linear; */
     text-align: center;
-    /* height: 88vh; */
     padding-bottom: 2rem;
     width: 95%;
 }
 .Sign-up.translate {
-    /* transform: translateY(0%); */
     transition: all .3s linear;
 
 }
@@ -229,10 +221,7 @@ nav.open {
 .posit.show-signup {
     visibility: visible;
     opacity: 1;
-    /* transform: translateY(-60%); */
-    transition: all .3s linear;
-    /* transform: translateY(0); */
-    /* display: block; */
+    /* transition: all .3s linear; */
 }
 .form {
     display: flex;
@@ -242,7 +231,6 @@ nav.open {
 .form input {
     border-radius: 8px;
     border: 1px solid silver;
-    /* border: none; */
     font-size: 17px;
     outline: none;
     padding: 0.5rem;
@@ -310,7 +298,7 @@ nav.open {
     width: 100%;
     height: 35vh;
 }
-@keyframes slide {
+/* @keyframes slide {
     20% {
        background-image: url(/image/images.jfif);
     }
@@ -321,4 +309,4 @@ nav.open {
     75% {
 
     }
-}
+} */

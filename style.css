@@ -31,7 +31,64 @@
     width: 90%;
     color: #ffff;
 }
-
+.To {
+    padding: 1rem;
+}
+ .hi h3 {
+    text-transform: uppercase;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    font-weight: 900;
+}
+.wec p {
+    font-size: 16px;
+    line-height: 1.6;
+}
+.Kindz {
+    width: 100%;
+    /* overflow-x: hidden; */
+}
+.Kindz img {
+    margin-top: 4rem;
+    width: 100%;
+}
+.Air {
+    display: flex;
+    gap: 1rem;
+}
+.Air2 {
+    margin-top: 2rem;
+}
+.Air3 {
+    display: flex;
+    gap: 1rem;
+    margin-top: 2rem;
+}
+.Days h4 {
+    margin-bottom: 0.5rem;
+}
+.sed-line {
+    /* border: 1px solid silver; */
+    background: silver;
+    width: 100%;
+    height: 1px;
+    margin-top: 1rem;
+}
+.sed-line1 {
+    background: silver;
+    width: 100%;
+    height: 1px;
+    margin-top: 1rem;
+}
+.sed-line2 {
+    width: 80%;
+    height: 6px;
+    background: #67A2E5;
+    margin: auto;
+    position: absolute;
+    left: 10%;
+    margin-top: -0.15rem;
+}
 
 
 
@@ -88,5 +145,33 @@
     }
     #dallas {
         margin-left: -2rem;
+    }
+    .wec h3 {
+
+    }
+    .wec p {
+        width: 90%;
+    }
+    .wec p {
+        font-size: 15px;
+        line-height: 1.6;
+    }
+    .To {
+        padding: 5rem;
+    }
+    .hi {
+        /* margin-top: -4rem; */
+        font-size: 20px;
+    }
+    .wec {
+        display: flex;
+    }
+    .Kindz {
+        width: 300%;
+    }
+    .Kindz img {
+        margin-top: 4rem;
+        /* margin-left: -7rem; */
+        width: 100%;
     }
 }
