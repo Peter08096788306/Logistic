@@ -6,6 +6,7 @@
 }
 body {
     /* height: 6000vh; */
+    scroll-behavior: smooth;
     overflow-x: hidden;
 }
 .logo {
@@ -109,19 +110,38 @@ nav {
     display: none;
     margin-top: 2rem;
     transition: all .6s linear;
+    font-size: 13px;
+    font-weight: 600;
 }
-nav li {
+nav ul li {
+    color: #ffff;
+    cursor: pointer;
     list-style-type: none;
 }
 nav a {
-    font-size: 13px;
-    font-weight: 600;
-    text-decoration: none;
-    color: #ffff;
 }
-nav a:hover {
+nav li:hover {
     color: black;
     transition: all .3s linear;
+}
+.uloo, .uloo2, .uloo3{
+    display: none;
+}
+.uloo li, .uloo2, .uloo3 li {
+    margin-left: 3rem;
+}
+.uloo.out, .uloo2.out2, .uloo3.out3 {
+    display: block;
+}
+.server:hover {
+    color: #000;
+}
+ .uloo ul, a {
+    color: #000;
+    text-decoration: none;
+}
+.uloo, .uloo2, .uloo3 a:hover {
+    color: transparent;
 }
 nav.open {
    display: block;

@@ -7,6 +7,8 @@ img.addEventListener('click', ()=> {
 })
 
 
+
+
 const signUp = document.querySelector(".button");
 const posit = document.querySelector(".posit");
 const close = document.querySelector(".close-menu");
@@ -34,28 +36,52 @@ const sr = ScrollReveal({
     // loop : true
   });
   
-  const tex = document.querySelectorAll('.tex');
-  const ship = document.querySelectorAll('.ship');
-sr.reveal('.tex', {origin: 'top'});
-sr.reveal('.ship', {origin: 'left'});
+//   const tex = document.querySelectorAll('.tex');
+//   const ship = document.querySelectorAll('.ship');
+// sr.reveal('.tex', {origin: 'top'});
+// sr.reveal('.ship', {origin: 'left'});
+// sr.reveal('.Kindz', {origin: 'right'});
+// sr.reveal('.Air', {origin: 'left'});
+// sr.reveal('.Air3', {origin: 'left'});
+
+
+ScrollReveal({
+    reset: true,
+    distance: '100px',
+    duration: 700,
+    delay: 1000,
+})
+ScrollReveal().reveal('.tex', {origin: 'top'});
 sr.reveal('.Kindz', {origin: 'right'});
 sr.reveal('.Air', {origin: 'left'});
 sr.reveal('.Air3', {origin: 'left'});
+ScrollReveal().reveal('.', {origin: 'left'});
+ScrollReveal().reveal('.image', {origin: 'left'});
+ScrollReveal().reveal('.headline', {origin: 'right'});
 
 
-// ScrollReveal({
-//     reset: true,
-//     distance: '80px',
-//     duration: 2000,
-//     delay: 200,
-// })
-// ScrollReveal().reveal('.tex', {origin: 'top'});
-// ScrollReveal().reveal('.', {origin: 'left'});
-// ScrollReveal().reveal('.image', {origin: 'left'});
-// ScrollReveal().reveal('.headline', {origin: 'right'});
 
-// new Typed('.type', {
-//     strings : ['We are a full-service Ocean Freight forwarder licensed by the FMC operating as Ocean Transportation lntermediary("OTI"). We provide complete international freight forwarding and logistics services, including: ocean freight, air freight, customs clearance, loading and transloading, consolidatons, warehousing and distribution (including packing and crating), cargo insurance and other value added logistics services. Our Mission is to retain our leadership in providing affordable & efficient service. Visit us today. '],
-//     typeSpeed : 100,
-//     loop : false
+const serve = document.querySelector(".server");
+const pus = document.querySelector(".uloo");
+
+const serve2 = document.querySelector(".server2");
+const pus2 = document.querySelector(".uloo2");
+
+const serve3 = document.querySelector(".server3");
+const pus3 = document.querySelector(".uloo3");
+
+
+serve.addEventListener('click', ()=> {
+    pus.classList.toggle("out")
+})
+serve2.addEventListener('click', ()=> {
+    pus2.classList.toggle("out2")
+})
+serve3.addEventListener('click', ()=> {
+    pus3.classList.toggle("out3")
+})
+// serve.ForEach((s, i) => {
+//     s.addEventListener('click', ()=> {
+//         pus[i].classList.add('out')
+//     })
 // })

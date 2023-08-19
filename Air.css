@@ -1,0 +1,59 @@
+.Home {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+}
+.Home p {
+    margin-top: 1rem;
+    font-size: 15px;
+}
+.line {
+    width: 100%;
+    height: 1px;
+    background: silver;
+}
+.image {
+    margin-top: 2rem;
+    text-align: center;
+}
+.image img {
+    width: 95%;
+    margin-top: auto;
+}
+.padd {
+    padding: 1rem;
+}
+.padd li {
+    line-height: 1.6;
+    font-size: 15px;
+}
+.offer p {
+    font-size: 15px;
+    line-height: 1.6;
+}
+.offer h4 {
+    font-size: 15px;
+    margin-top: 2rem;
+}
+
+@media (min-width: 1022px) {
+    .Home {
+        margin: 0 5rem;
+    }
+    .untitled {
+        display: flex;
+        flex-direction: row-reverse;
+        margin: 3rem 5rem;
+    }
+    .offer p {
+        font-size: 15px;
+        margin-top: 1rem;
+    }
+    .image {
+        width: 160%;
+    }
+    .line {
+        width: 86%;
+        margin: auto;
+    }
+}
