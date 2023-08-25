@@ -28,6 +28,7 @@
 .tex h3 {
     font-weight: 300;
     text-align: center;
+    position: absolute;
     width: 90%;
     color: #ffff;
 }
@@ -89,7 +90,43 @@
     left: 10%;
     margin-top: -0.15rem;
 }
-
+.blor {
+    background: black;
+    padding: 1rem;
+    color: #ffff;
+}
+.blor h2 {
+    font-size: 30px;
+    margin-top: 1rem;
+}
+.blor p {
+    margin-left: 1.2rem;
+    font-size: 20px;
+    /* list-style:lo ; */
+}
+.span {
+    padding: 1rem 1.2rem;
+    font-size: 15px;
+    line-height: 1.5;
+    color: gray;
+}
+.blor li {
+    font-size: 40px;
+    font-weight: 600;
+    padding: 1rem;
+    margin-left: 2.5rem;
+}
+.Bus img {
+    margin-left: 8rem;
+}
+.fa-check {
+    color: green;
+    font-size: 20px;
+    /* font-weight: 900; */
+}
+.expert h2 {
+    padding: 1rem;
+}
 
 
 
@@ -128,7 +165,7 @@
         width: 2px;
         position: absolute;
         top: 5%;
-        right: 16%;
+        right: 15%;
         background: silver;
     }
     nav {

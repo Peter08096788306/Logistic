@@ -17,48 +17,25 @@ const Up = document.querySelector(".Sign-up");
 signUp.addEventListener('click', ()=> {
     posit.classList.add('show-signup')
     close.classList.add('show-menu')
-    // posit.style.margin = "6rem"
-    // Up.classList.add('translate')
-})
+});
 close.addEventListener('click', ()=> {
     posit.classList.remove('show-signup')
-    // close.classList.add('show-menu')
-    // Up.classList.add('translate')
-})
-
-const sr = ScrollReveal({
-    origin: 'top',      // Origin of the animation
-    distance: '100px',   // Distance to start animation (can be in pixels or percentage)
-    duration: 500,     // Duration of the animation in milliseconds
-    delay: 200,         // Delay before the animation starts
-    // easing: 'ease',     // Easing function for the animation
-    mobile: false       // Whether to enable animations on mobile devices
-    // loop : true
-  });
-  
-//   const tex = document.querySelectorAll('.tex');
-//   const ship = document.querySelectorAll('.ship');
-// sr.reveal('.tex', {origin: 'top'});
-// sr.reveal('.ship', {origin: 'left'});
-// sr.reveal('.Kindz', {origin: 'right'});
-// sr.reveal('.Air', {origin: 'left'});
-// sr.reveal('.Air3', {origin: 'left'});
-
+});
 
 ScrollReveal({
     reset: true,
-    distance: '100px',
+    distance: '80px',
     duration: 700,
-    delay: 1000,
+    delay: 200,
 })
-ScrollReveal().reveal('.tex', {origin: 'top'});
-sr.reveal('.Kindz', {origin: 'right'});
-sr.reveal('.Air', {origin: 'left'});
-sr.reveal('.Air3', {origin: 'left'});
-ScrollReveal().reveal('.', {origin: 'left'});
-ScrollReveal().reveal('.image', {origin: 'left'});
-ScrollReveal().reveal('.headline', {origin: 'right'});
-
+ScrollReveal().reveal('.ship', {origin: 'top'});
+ScrollReveal().reveal('.tex', {origin: 'right'});
+ScrollReveal().reveal('.Kindz', {origin: 'right'});
+ScrollReveal().reveal('.Bus', {origin: 'right'});
+ScrollReveal().reveal('.Air', {origin: 'left'});
+ScrollReveal().reveal('.Air2', {origin: 'left'});
+ScrollReveal().reveal('.Air3', {origin: 'left'});
+// ScrollReveal().reveal('.Air', {origin: 'left'});
 
 
 const serve = document.querySelector(".server");
@@ -74,14 +51,35 @@ const pus3 = document.querySelector(".uloo3");
 serve.addEventListener('click', ()=> {
     pus.classList.toggle("out")
 })
+
 serve2.addEventListener('click', ()=> {
     pus2.classList.toggle("out2")
 })
 serve3.addEventListener('click', ()=> {
     pus3.classList.toggle("out3")
 })
-// serve.ForEach((s, i) => {
-//     s.addEventListener('click', ()=> {
-//         pus[i].classList.add('out')
-//     })
-// })
+
+new Typed('.type', {
+    strings : ['Drop off youe item(s) in person or have it mailed to us using your in-house address you"ll get when you sign up for a free account with us. '],
+    typeSpeed : 60,
+    // backSpeed : 150,
+    // loop :true
+});
+
+new Typed('.type2', {
+    strings : ['We confirm receipt, process payment, and package your Item(s) accordingly and set ready for shipment. '],
+    typeSpeed : 40,
+    // backSpeed : 150,
+    // loop :true
+});
+
+new Typed('.type3', {
+    strings : ['We ship your item(s) and deliver to your final destination. Air freiht: 7-10 days, RO-RO: 21 days, Container: 6-8 weeks.'],
+    typeSpeed : 50,
+    // backSpeed : 150,
+    // loop :true
+});
+
+// sr.reveal('.Kindz', {origin: 'right'});
+// sr.reveal('.Bus', {origin: 'right'});
+

@@ -316,7 +316,17 @@ nav.open {
     background-size: cover;
     animation: slide 15s infinite;
     width: 100%;
+    position: relative;
     height: 35vh;
+}
+.ship::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    height: 35vh;
+    filter: blur(10px);
+    width: 100%;
+    background-color: #0000004d;
 }
 /* @keyframes slide {
     20% {
