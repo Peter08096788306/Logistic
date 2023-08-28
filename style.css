@@ -116,8 +116,12 @@
     padding: 1rem;
     margin-left: 2.5rem;
 }
+.Bus {
+    width: 100%;
+    text-align: end;
+}
 .Bus img {
-    margin-left: 8rem;
+    /* margin-left: 7rem; */
 }
 .fa-check {
     color: green;
@@ -182,6 +186,13 @@
         top: 5%;
         right: 15%;
         background: silver;
+    }
+    .posit {
+        /* width: 50%; */
+        left: 30%;
+    }
+    .Sign-up {
+        margin: auto;
     }
     nav {
         margin-top: -4rem;

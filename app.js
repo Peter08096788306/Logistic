@@ -24,9 +24,9 @@ close.addEventListener('click', ()=> {
 
 ScrollReveal({
     reset: true,
-    distance: '80px',
-    duration: 700,
-    delay: 200,
+    distance: '300px',
+    duration: 800,
+    delay: 500,
 })
 ScrollReveal().reveal('.ship', {origin: 'top'});
 ScrollReveal().reveal('.tex', {origin: 'right'});
