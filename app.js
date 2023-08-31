@@ -9,10 +9,9 @@ img.addEventListener('click', ()=> {
 
 
 
-const signUp = document.querySelector(".button");
-const posit = document.querySelector(".posit");
-const close = document.querySelector(".close-menu");
-const Up = document.querySelector(".Sign-up");
+const signUp = document.querySelector("#button");
+const posit = document.querySelector("#show-container");
+const close = document.querySelector("#close-menu");
 
 signUp.addEventListener('click', ()=> {
     posit.classList.add('show-signup')
@@ -21,6 +20,19 @@ signUp.addEventListener('click', ()=> {
 close.addEventListener('click', ()=> {
     posit.classList.remove('show-signup')
 });
+
+const signUp2 = document.querySelector("#button2");
+const posit2 = document.querySelector("#show-container2");
+const close2 = document.querySelector("#close-menu2");
+
+signUp2.addEventListener('click', ()=> {
+    posit2.classList.add('show-signup')
+    close2.classList.add('show-menu')
+});
+close2.addEventListener('click', ()=> {
+    posit2.classList.remove('show-signup')
+});
+
 
 ScrollReveal({
     reset: true,
@@ -35,7 +47,7 @@ ScrollReveal().reveal('.Bus', {origin: 'right'});
 ScrollReveal().reveal('.Air', {origin: 'left'});
 ScrollReveal().reveal('.Air2', {origin: 'left'});
 ScrollReveal().reveal('.Air3', {origin: 'left'});
-// ScrollReveal().reveal('.Air', {origin: 'left'});
+
 
 
 const serve = document.querySelector(".server");
@@ -62,24 +74,53 @@ serve3.addEventListener('click', ()=> {
 new Typed('.type', {
     strings : ['Drop off youe item(s) in person or have it mailed to us using your in-house address you"ll get when you sign up for a free account with us. '],
     typeSpeed : 60,
-    // backSpeed : 150,
-    // loop :true
-});
+})
+
+
 
 new Typed('.type2', {
     strings : ['We confirm receipt, process payment, and package your Item(s) accordingly and set ready for shipment. '],
     typeSpeed : 40,
-    // backSpeed : 150,
-    // loop :true
-});
+})
+
+
 
 new Typed('.type3', {
     strings : ['We ship your item(s) and deliver to your final destination. Air freiht: 7-10 days, RO-RO: 21 days, Container: 6-8 weeks.'],
     typeSpeed : 50,
-    // backSpeed : 150,
-    // loop :true
 });
 
-// sr.reveal('.Kindz', {origin: 'right'});
-// sr.reveal('.Bus', {origin: 'right'});
 
+
+document.addEventListener("DOMContentLoaded", function () {
+    const loginForm = document.getElementById("loginForm");
+    const signupForm = document.getElementById("signupForm");
+    // const signupConfirm = document.getElementById("signupConfirm");
+
+    loginForm.addEventListener("submit", function (event) {
+        event.preventDefault();
+        const username = document.getElementById("loginUsername").value;
+        const password = document.getElementById("loginPassword").value;
+        const storedUser = localStorage.getItem(username);
+
+        if (storedUser && JSON.parse(storedUser).password === password) {
+            alert("Login successful!");
+        } else {
+            alert("Invalid username or password.");
+        }
+    });
+
+    signupForm.addEventListener("submit", function (event) {
+        event.preventDefault();
+        const username = document.getElementById("signupUsername").value;
+        const password = document.getElementById("signupPassword").value;
+
+        if (localStorage.getItem(username)) {
+            alert("Username already exists.");
+        } else {
+            const user = { username, password };
+            localStorage.setItem(username, JSON.stringify(user));
+            alert("Signup successful! You can now log in.");
+        }
+    });
+});

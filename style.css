@@ -22,8 +22,9 @@
 }
 .tex {
     padding-top: 6rem;
-    top: -30%;
+    top: 30%;
     margin-left: 3rem;
+    overflow: visible;
 }
 .tex h3 {
     font-weight: 300;
@@ -149,6 +150,7 @@
 
 
 
+
 @media (min-width: 1022px) {
     .header {
         display: flex;
@@ -236,5 +238,33 @@
         margin-top: 4rem;
         /* margin-left: -7rem; */
         width: 100%;
+    }
+    .Sign-up, .Sign-up2 {
+        border-top-left-radius: 8px;
+        border-top-right-radius: 8px;
+        background: white;
+        margin: auto;
+        padding-top: 2rem;
+        transition: all .3s linear;
+        text-align: center;
+        padding-bottom: 2rem;
+        width: 45%;
+    }
+    /* .Sign-up2 {
+        border-top-left-radius: 8px;
+        border-top-right-radius: 8px;
+        background: white;
+        margin: auto;
+        padding-top: 2rem;
+        transition: all .3s linear;
+        text-align: center;
+        padding-bottom: 2rem;
+        width: 45%;
+    } */
+    .GO-TO {
+        width: 45%;
+    }
+    .close-menu, .close-menu2 {
+        left: 71%;
     }
 }
